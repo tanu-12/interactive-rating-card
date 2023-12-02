@@ -129,11 +129,11 @@ button .star{
 }
 .rate{
     border-radius: 48%;
-    background-color: var(--lG);
+    background-color: hsla(217,12%,63%,0.1);
     border:none;
-    color:var(--White);
+    color:var(--mG);
     padding: 0.70em;
-    opacity:0.60;
+    /* opacity:0.40; can't use opacity because opacity is inherited from parent to child*/
 }
 .submit{
     background-color: var(--Orange);
@@ -142,3 +142,15 @@ button .star{
     padding: 0.5rem;
     border-radius: 20px;
 }
+.star{
+  max-width: 1.75rem;
+  border-radius: 48%;
+  background-color: hsla(217,12%,63%,0.1);
+  border:none;
+  
+  padding: 0.70em;
+  
+  
+
+}
+
