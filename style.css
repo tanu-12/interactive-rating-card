@@ -153,4 +153,14 @@ button .star{
   
 
 }
+@media (min-width:500px){
+  .rate-card{
+    max-width: 500px;
+  }
+}
 
+.rate:is(:hover,:focus){
+
+  background-color: var(--Orange);
+  cursor: pointer;
+}
