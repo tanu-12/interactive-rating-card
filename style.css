@@ -128,6 +128,7 @@ button .star{
     justify-content: space-between;
 }
 .rate{
+  max-width: 2.25rem;
     border-radius: 48%;
     background-color: hsla(217,12%,63%,0.1);
     border:none;
@@ -135,7 +136,7 @@ button .star{
     padding: 0.70em;
     /* opacity:0.40; can't use opacity because opacity is inherited from parent to child*/
 }
-.submit{
+.Submit_b{
     background-color: var(--Orange);
     color:var(--White);
     border:none;
@@ -143,7 +144,7 @@ button .star{
     border-radius: 20px;
 }
 .star{
-  max-width: 1.75rem;
+  max-width: 2.25rem;
   border-radius: 48%;
   background-color: hsla(217,12%,63%,0.1);
   border:none;
@@ -152,6 +153,9 @@ button .star{
   
   
 
+}
+.hidden{
+  display:none;
 }
 @media (min-width:500px){
   .rate-card{
@@ -162,5 +166,11 @@ button .star{
 .rate:is(:hover,:focus){
 
   background-color: var(--Orange);
+  cursor: pointer;
+}
+.Submit_b:is(:hover,:focus){
+
+  background-color: var(--White);
+  color:var(--Orange);
   cursor: pointer;
 }
