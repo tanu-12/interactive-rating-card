@@ -95,7 +95,7 @@ body{
 
     border-radius: 0.75rem;
     overflow: hidden;
-    background-color: var(--dB);
+    background: linear-gradient(to top,var(--vDB),var(--dB));
     padding: var(--padding);
     display:grid;
     gap:var(--spacing);
@@ -116,11 +116,11 @@ button .star{
     border-radius: 100%;
     max-width: 15px;
 }
-.star[data-icon="star_icon"]::before{ 
+/* .star[data-icon="star_icon"]::before{ 
     
     content:"";
     background-image: url("images/icon-star.svg");
-} 
+}  */
 
 .rate_option{
     display:flex;
@@ -157,9 +157,9 @@ button .star{
 .hidden{
   display:none;
 }
-@media (min-width:500px){
+@media (min-width:400px){
   .rate-card{
-    max-width: 500px;
+    max-width: 400px;
   }
 }
 
@@ -173,4 +173,13 @@ button .star{
   background-color: var(--White);
   color:var(--Orange);
   cursor: pointer;
+}
+
+
+/*thank you state design*/
+.thank_you_state{
+ place-items: center; 
+}
+.thanks_message{
+  text-align: center;
 }
